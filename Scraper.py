@@ -28,9 +28,9 @@ def search(content):
         price = float(price[0:5])
 
         if(price < oldPrice):
-            result += title + ": " + str(price) + " " + "PREZZO DIMINUITO DI:" + '\n'  
+            result += title + ": " + str(price) + " " + "PREZZO DIMINUITO DI: " + str(oldPrice - price) + '\n'  
         elif(price > oldPrice):
-            result += title + ": " + str(price) + " " + "PREZZO AUMENTATO DI:" + '\n'
+            result += title + ": " + str(price) + " " + "PREZZO AUMENTATO DI: "  + str(price - oldPrice) + '\n'
         else:
             result += title + ": " + str(price) + " " + "PREZZO RIMASTO UGUALE " + '\n'
         
@@ -55,7 +55,6 @@ def writeRes(result):
     file = open("Result.txt", 'w')
     file.write(result)
     file.close
-    print(result)
 
 
 content = openFILE()
