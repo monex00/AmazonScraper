@@ -16,6 +16,7 @@ def openFILE():
 def search(content):
     result=""
     prices=[]
+    som = 0
     for i in range(len(content)):
         title = content[i][0]
         url= content[i][1]
@@ -34,11 +35,14 @@ def search(content):
         else:
             result += title + ": " + str(price) + " " + "PREZZO RIMASTO UGUALE " + '\n'
         
+        if title.find("MIGLIORE") == -1:
+            som += price
+        
         print(result.split('\n')[-2]);
         prices.append(price)
         
     updateURL(content, prices)
-    writeRes(result)
+    writeRes(result, som)
 
 def updateURL(content, prices):
     file = open("URL.txt", 'w')
@@ -51,8 +55,9 @@ def updateURL(content, prices):
     file.write(newContent)
     file.close
 
-def writeRes(result):
+def writeRes(result, sum):
     file = open("Result.txt", 'w')
+    result += "TOTALE: " + str(sum)
     file.write(result)
     file.close
 
