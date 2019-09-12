@@ -1,0 +1,8 @@
+RAM; https://www.amazon.it/Corsair-Vengeance-Memorie-Desktop-Prestazioni/dp/B0134EW7G8/ref=mp_s_a_1_2?keywords=16gb%2Bddr4%2B3000mhz&qid=1567850020&s=gateway&sr=8-2&th=1; 82.65
+PROCESSORE; https://www.amazon.it/AMD-Ryzen-2400G-3-6GHz-processor/dp/B079D8FD28/ref=mp_s_a_1_4?keywords=ryzen+5+2600x&qid=1567850101&s=gateway&sprefix=ryzen+5+&sr=8-4; 130.0
+SCHEDA MADRE; https://www.amazon.it/MSI-B450M-PRO-M2-Scheda-Realtek/dp/B07FQB4X3M/ref=mp_s_a_1_2?keywords=b450m&qid=1567850346&s=gateway&sr=8-2; 66.2
+ALIMENTATORE; https://www.amazon.it/FSP-4711140486321-Alimentatore-Watt-Nero/dp/B00JO95ZAI/ref=mp_s_a_1_1?keywords=fsp+500&qid=1567850499&s=gateway&sr=8-1; 51.37
+SCHEDA GRAFICA; https://www.amazon.it/XFX-RX-580P8DFD6-Scheda-Grafica-Nero/dp/B06Y66K3XD/ref=mp_s_a_1_3?keywords=580+8gb&qid=1567850610&s=gateway&sprefix=580&sr=8-3; 179.0
+SSD; https://www.amazon.it/Crucial-BX500-CT120BX500SSD1-Interno-Pollici/dp/B07G3KRZBY/ref=mp_s_a_1_2?keywords=ssd+120&qid=1567850841&s=gateway&sr=8-2; 23.5
+PROCESSORE MIGLIORE; https://www.amazon.it/AMD-Ryzen-5-3600-Processori/dp/B07STGGQ18/ref=mp_s_a_1_1?keywords=ryzen+5+3600&qid=1567850953&s=gateway&sprefix=ryzen+5+&sr=8-1; 189.8
+SCHEDA MADRE MIGLIORE; https://www.amazon.it/Asus-B450M-Scheda-Connettore-3200MHz/dp/B07F6YQV4J/ref=mp_s_a_1_4?keywords=b450+m+a+asus&qid=1567851150&s=gateway&sr=8-4; 81.99
