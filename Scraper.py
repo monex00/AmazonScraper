@@ -40,7 +40,7 @@ def search(content):
         
         print(result.split('\n')[-2]);
         prices.append(price)
-        
+    print("TOTALE: " + str(som))
     updateURL(content, prices)
     writeRes(result, som)
 
