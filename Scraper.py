@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 
 HEADER = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"}
 
-
 def openFILE():
     file = open("URL.txt", 'r')
     content = file.read().split('\n')
@@ -29,9 +28,11 @@ def search(content):
         price = float(price[0:5])
 
         if(price < oldPrice):
-            result += title + ": " + str(price) + " " + "PREZZO DIMINUITO DI: " + str(oldPrice - price) + '\n'  
+            diff = round(oldPrice - price, 2)
+            result += title + ": " + str(price) + " " + "PREZZO DIMINUITO DI: " + str(diff) + '\n'  
         elif(price > oldPrice):
-            result += title + ": " + str(price) + " " + "PREZZO AUMENTATO DI: "  + str(price - oldPrice) + '\n'
+            diff = round(price - oldPrice, 2)
+            result += title + ": " + str(price) + " " + "PREZZO AUMENTATO DI: "  + str(diff) + '\n'
         else:
             result += title + ": " + str(price) + " " + "PREZZO RIMASTO UGUALE " + '\n'
         
@@ -60,7 +61,6 @@ def writeRes(result, sum):
     result += "TOTALE: " + str(sum)
     file.write(result)
     file.close
-
 
 content = openFILE()
 search(content)
