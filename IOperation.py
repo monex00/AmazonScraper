@@ -22,13 +22,13 @@ class IOperation:
         return element
 
     def setResult(self, result, sum):
-        file = open("Result.txt", 'w')
+        file = open(self.outPath, 'w')
         result += "TOTALE: " + str(sum)
         file.write(result)
         file.close
     
     def updateInput(self, content, prices):
-        file = open("URL.txt", 'w')
+        file = open(self.inPath, 'w')
         newContent = ""
         for i in range(0, len(content)):
             if i != len(content) -1:
