@@ -37,3 +37,17 @@ class IOperation:
                 newContent += content[i][0] + ";" + content[i][1] + "; " + str(prices[i]) 
         file.write(newContent)
         file.close
+
+    def getSingleInput(self):
+        file = open(self.inPath, 'r')
+        content = file.read().split('\n')
+        choise = 0
+        for index in range(0,len(content)):
+            ele = content[index].split(';')
+            print(str(index) + ": " + ele[0])
+
+        choise = input("inserisci il numero scelto: ")
+        line = content[int(choise)]
+        element= line.split(';')
+        file.close
+        return element
